@@ -10,5 +10,9 @@ abstract class Animal
     public $type;
     public Product $product;
 
-    abstract public function growth();
+    public function growth(): Product
+    {
+        return $this->product->growth();
+    }
+
 }

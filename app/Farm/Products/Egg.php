@@ -13,8 +13,4 @@ class Egg extends Product
         $this->growthMax = $growthMax;
     }
 
-    public function growth():Product {
-        $this->harvest = rand($this->growthMin, $this->growthMax);
-        return clone $this;
-    }
 }

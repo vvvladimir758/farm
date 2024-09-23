@@ -15,9 +15,5 @@ class Chicken extends Animal
     {
         $this->product = new Egg(self::GROWTH_MIN, self::GROWTH_MAX);
     }
-    public function growth(): Product
-    {
-        return $this->product->growth();
-    }
 
 }

@@ -10,6 +10,9 @@ abstract class Product
     protected $growthMax;
 
     public $harvest;
-
-
+    public function growth(): Product
+    {
+        $this->harvest = rand($this->growthMin, $this->growthMax);
+        return clone $this;
+    }
 }
