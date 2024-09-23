@@ -8,8 +8,8 @@ class Cow extends Animal
 {
 
     public $type = "Корова";
-    public const GROWTH_MIN = 8;
-    public const GROWTH_MAX = 12;
+    protected const GROWTH_MIN = 8;
+    protected const GROWTH_MAX = 12;
 
     public function __construct()
     {

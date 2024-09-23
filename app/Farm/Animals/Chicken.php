@@ -8,8 +8,8 @@ class Chicken extends Animal
 {
 
     public $type = "Курица (несушка)";
-    public const GROWTH_MIN = 0;
-    public const GROWTH_MAX = 1;
+    protected const GROWTH_MIN = 0;
+    protected const GROWTH_MAX = 1;
 
     public function __construct()
     {
